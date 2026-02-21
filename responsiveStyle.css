@@ -1,0 +1,170 @@
+.cta-btn {
+    display: inline-block;
+    padding: 8px 18px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--accent-soft);
+    background: linear-gradient(135deg,
+            #1fa2bccd,
+            var(--accent));
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 6px 16px var(--shadow);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+    font-family: "Roboto Flex", sans-serif;
+}
+
+.cta-btn:hover {
+    transform: translateY(-3px) scale(1.01);
+    box-shadow: 0 0 52px var(--shadow);
+    background: linear-gradient(135deg,
+            var(--primary),
+            var(--accent));
+
+}
+
+.cta-btn:active {
+    transform: translateY(0) scale(0.99);
+    box-shadow: 0 4px 10px var(--shadow);
+}
+
+.cta-btn:focus {
+    outline: 3px solid var(--primary-light);
+    outline-offset: 3px;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    #menu-label {
+        display: block;
+        position: relative;
+        right: 20px;
+        font-size: 1.4rem;
+        font-weight: 800;
+        background-color: transparent;
+        border: none;
+        padding: 6px 10px;
+        border-radius: 6px;
+        cursor: pointer;
+        color: var(--text-main);
+    }
+
+    #prime-btn {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 59px;
+        right: 6px;
+        background: var(--primary-light);
+        padding: 12px 16px;
+        border-radius: 10px;
+        box-shadow: 0 10px 25px var(--shadow);
+        gap: 8px;
+        flex-direction: column;
+        z-index: 60;
+        min-width: 160px;
+    }
+
+    .nav-links li {
+        list-style: none;
+        margin: 0;
+    }
+
+    .nav-links li a {
+        text-decoration: none;
+        color: var(--text-main);
+        display: block;
+        padding: 8px 10px;
+        border-radius: 6px;
+    }
+
+    .nav-links li a:hover {
+        background: var(--primary);
+        color: var(--text-main);
+    }
+
+
+    .menu-toggle:checked+#menu-label+.nav-links,
+    #menu-label:hover+.nav-links li a {
+        display: flex;
+    }
+}
+
+/* Hero Section  */
+
+@media screen and (max-width: 768px) {
+
+    /* Hero Section  */
+    .hero-content .headline {
+        font-size: 2rem;
+    }
+
+    .hero-content .subtext,
+    .hero-content .loctions {
+        font-size: .98rem;
+    }
+
+    .hero-content .details {
+        font-size: .98rem;
+    }
+
+    /* about Section  */
+
+    .about .title {
+        font-size: 1.7rem;
+    }
+
+    .about .description {
+        font-size: .98rem;
+    }
+
+    /* benefits Section  */
+
+    .benefits .title {
+        font-size: 1.7rem;
+    }
+
+    .benefits .description {
+        font-size: .97rem;
+    }
+
+    /* countries Section  */
+
+    .countries .title {
+        font-size: 1.7rem;
+    }
+
+    .countries .description {
+        font-size: .97rem;
+    }
+
+    .why .title {
+        font-size: 1.7rem;
+    }
+
+    .why .description {
+        font-size: .97rem;
+    }
+
+    .testimonals .title {
+        font-size: 1.7rem;
+    }
+
+    .testimonals .description {
+        font-size: .97rem;
+    }
+}
