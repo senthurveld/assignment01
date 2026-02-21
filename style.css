@@ -97,6 +97,7 @@ body {
 
 .hero-content {
     padding: 25px 0;
+    margin-top: 8%;
 }
 
 .hero-content .headline {
@@ -262,23 +263,32 @@ body {
 
 
 /* Form  */
+.registration-form .title {
+    color: var(--accent);
+    font-weight: 600;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: 2.4rem;
+    
+}
 
 form {
     margin: 0 auto;
-    width: 60%;
+    width: 40%;
     text-align: center;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     /* flex-shrink: 0; */
-    margin-bottom: 15%;
+    margin-bottom: 10%;
 }
 
 .registration-form label {
     color: var(--text-main);
-    font-weight: 500;
-    font-size: 1.1rem;
+    font-weight: 600;
+    font-size: 1.2rem;
     text-align: center;
+    padding: 8px;
 }
 
 .registration-form input {
@@ -287,7 +297,10 @@ form {
     padding: 4px 0;
 }
 
-
+.registration-form #submit {
+    width: 30%;
+    margin: 00 auto;
+}
 
 footer,
 footer li,
@@ -307,4 +320,28 @@ footer {
 
 .copy {
     color: var(--bg-main);
+}
+
+.success {
+    height: 95dvh;
+    background-color: var(--primary-light);
+    /* display: flex; */
+    text-align: center;
+    align-items: center;
+    padding-top: 18%;
+}
+
+.success .title {
+    color: var(--accent);
+    font-weight: 600;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: 2.4rem;
+}
+
+.success .description {
+    color: var(--text-main);
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 15%;
 }

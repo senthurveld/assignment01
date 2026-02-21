@@ -81,27 +81,30 @@
     </section>
 
     <section class="registration-form">
-        <form>
+        <form id="register" action="success.html">
+            <h1 class="title">Registration Form</h1>
             <label for="name">Full Name:</label>
-            <input type="text" id="name">
+            <input type="text" id="name" required>
             <br>
             <label for="number">Mobile Number:</label>
-            <input type="tel" id="nnumberame">
+            <input type="tel" id="number" required>
             <br>
             <label for="city">City:</label>
-            <input type="text" id="city">
+            <input type="text" id="city" required>
             <br>
             <label for="status">NEET Status:</label>
-            <input type="text" id="status">
+            <input type="text" id="status" required>
             <br>
             <label for="clg">College Preference:</label>
-            <input type="text" id="clg">
+            <input type="text" id="clg" required>
             <br>
-            <label for="loan">Education Loan (Yes/No):</label>
-            <input type="radio" value="Yes" name="loan">Yes
-            <input type="radio" value="No" name="loan">No
+            <div>
+                <label for="loan">Education Loan</label>
+                <input type="radio" value="Yes" name="loan">Yes
+                <input type="radio" value="No" name="loan">No
+            </div>
             <br><br>
-            <button onsubmit="" type="submit" class="cta-btn">Submit</button>
+            <button  type="submit" class="cta-btn" id="submit">Submit</button>
         </form>
     </section>
 

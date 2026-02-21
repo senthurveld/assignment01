@@ -167,4 +167,16 @@
     .testimonals .description {
         font-size: .97rem;
     }
+
+    .success {
+        padding-top: 22%;
+    }
+
+    .success .title {
+        font-size: 1.7rem;
+    }
+
+    .success .description {
+        font-size: .97rem;
+    }
 }
